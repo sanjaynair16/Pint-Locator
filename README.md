@@ -112,8 +112,9 @@ The following function can be broken down into the following:
 ## Step 6) Returning the Name, Address, Postcode, Local_Authority (Borough), Unscaled Latitiude and Unscaled Longitude 
 
 The following function can be broken down into the following:
-1) Take ID from the list of pubs selected that are closest to the users' input location based on cluster
-2) Return original dataframe with pub names, addresses, postcodes, local authorities, unscaled latitude's and unscaled longitude's
+1) Converting the pub ID from float to integer to match the original dataframe ID data type
+2) Take ID from the list of pubs selected that are closest to the users' input location based on cluster
+3) Return original dataframe with pub names, addresses, postcodes, local authorities, unscaled latitude's and unscaled longitude's
 
 ![Screenshot 2021-06-16 at 15 48 57](https://user-images.githubusercontent.com/70877020/122179863-79584900-ceba-11eb-8278-1ad1f2c8b263.png)
 
