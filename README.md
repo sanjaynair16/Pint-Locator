@@ -1,4 +1,4 @@
-# pint-locator
+# Pint-Locator
 
 # Description:
 
