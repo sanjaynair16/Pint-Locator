@@ -10,6 +10,7 @@ A pub recommendation system used to help users find pubs near them based on thei
 - Pre-Processing
 - Exploratory Data Analysis
 - Model Development & Predictions
+- Model Deployment (Streamlit)
 - Challenges & Next Steps
 
 # Business Objective: 
@@ -118,3 +119,39 @@ The following function can be broken down into the following:
 
 ![Screenshot 2021-06-16 at 15 48 57](https://user-images.githubusercontent.com/70877020/122179863-79584900-ceba-11eb-8278-1ad1f2c8b263.png)
 
+
+# Model Deployment
+
+Below features a demonstration of the deployed model using Streamlit. 
+
+## Finding Pubs
+
+For the purpose of this demonstration, the selected locations were pre-set to popular spots accross london. The user would select a location and it would return a map with the pubs that are currently surrounding him/her.
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/70877020/122635299-99377900-d115-11eb-8ac3-cd2648090c09.gif)
+
+## Selecting Location
+
+The user would then select a pub they would like to visit. Once they have choosen, the will recieve the address and google maps link to direct them.
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/70877020/122635531-10214180-d117-11eb-93e7-aed106b5ab0f.gif)
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/70877020/122635534-144d5f00-d117-11eb-9d0c-f7e25b68c5e7.gif)
+
+
+# Challenges & Next Steps
+
+Challenges:
+
+1) The data set is 4 years old and isn't updated in real-time, and therefore some of the suggested pubs could have moved or no longer exist
+Solution: Potentially using API instead (Google Maps Paid API service)
+
+2) Limitation of the model is the cluster sizes are different, with some clusters being significantly larger than others as some pubs were located in highly saturated areas.
+
+Next Steps:
+
+1) Integrate Google Maps API to provide real-time information on pubs surrounding the user. 
+
+2) Deploy model as a Mobile APP with additional features
+    - Features could include booking service, additional information on pub (price-range, ratings, events), call ride home service (Uber/Taxi).
+    - Other future features could include pub-crawl game, ticking feature to show pubs previously visited.
